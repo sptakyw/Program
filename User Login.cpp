@@ -9,13 +9,12 @@ int main()
 	string Username2 ;
 	int Pass2 ;
 
+	do {
 	cout << "/////////////////Menu///////////////// " << endl;
 	cout << " 1.Register " << endl;
 	cout << " 2.Login " << endl ;
 	cout << " Q.Exit Program " << endl ;
 	
-
-	do {
 		cout << " ------------------------------------- " << endl;
 		cout << " Enter Menu : " ;
 		cin >> Menu ;
@@ -36,11 +35,10 @@ int main()
 			cin >> Username2 ;
 			cout << " Input Password : " ;
 			cin >> Pass2 ;
-				if (Username == Username2 || Pass1 == Pass2) 
-					{cout << " Username or Password correct " << endl;}
-				else if (Username != Username2 || Pass1 != Pass2)
-					{cout << " !!!!Username or Password incorrect Please try again!!!! " << endl;
+				if (Username != Username2 || Pass1 != Pass2) 
+					{
 						do {
+							cout << " !!!!Username or Password incorrect Please try again!!!! " << endl;
 							cout << "Input Username : ";
 							cin >> Username2 ;
 							cout << "Input Password : ";
@@ -48,6 +46,7 @@ int main()
 
 							}while(Username != Username2 || Pass1 != Pass2) ;
 				}
+				else {cout << " Username or Password correct " << endl;}
 		}
 				
 		else if(Menu == 'Q')
