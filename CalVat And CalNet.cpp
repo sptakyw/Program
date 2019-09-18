@@ -37,4 +37,3 @@ void display(string name[5],float price[5][3])
 		cout << setprecision(2) << fixed << i+1 << "\t\t" << name[i] << "\t\t" << price[i][0] << "\t\t" << price[i][1] << "\t\t" << price[i][2] << endl;
 	}
 }
-
