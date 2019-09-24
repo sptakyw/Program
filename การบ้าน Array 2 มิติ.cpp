@@ -33,8 +33,7 @@ void graph(int A[5][6]){
 				cout << " \t";
 			}else{
 				cout << "*\t";
-			}
-			 
+			}	 
 		}
 		cout <<endl;
 	}
